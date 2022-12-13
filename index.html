@@ -4,48 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CubeSlash</title>
+    <title>ColourBlast</title>
     <link rel="stylesheet" href="style.css">
-    <link rel = "icon" href ="icon.png" type = "image/x-icon">
+    <link rel = "icon" href ="icon.jpg" type = "image/x-icon">
 </head>
 <body>
-    <!-- Game canvas -->
-<canvas id="c"></canvas>
-
-<!-- Gameplay HUD -->
-<div class="hud">
-	<div class="hud__score">
-		<div class="score-lbl"></div>
-		<div class="cube-count-lbl"></div>
-	</div>
-	<div class="pause-btn"><div></div></div>
-	<div class="slowmo">
-		<div class="slowmo__bar"></div>
-	</div>
-</div>
-
-<!-- Menu System -->
-<div class="menus">
-	<div class="menu menu--main">
-		<h1>CUBE SLASH</h1>
-		<button type="button" class="play-normal-btn">PLAY GAME</button>
-		<button type="button" class="play-casual-btn">CASUAL MODE</button>
-		<div class="credits">A GameInVerse product by: <a href="https://www.github.com/MainakRepositor">Mainak Chaudhuri</a></div>
-	</div>
-	<div class="menu menu--pause">
-		<h1>Paused</h1>
-		<button type="button" class="resume-btn">RESUME GAME</button>
-		<button type="button" class="menu-btn--pause">MAIN MENU</button>
-	</div>
-	<div class="menu menu--score">
-		<h1>Game Over</h1>
-		<h2>Your Score:</h2>
-		<div class="final-score-lbl"></div>
-		<div class="high-score-lbl"></div>
-		<button type="button" class="play-again-btn">PLAY AGAIN</button>
-		<button type="button" class="menu-btn--score">MAIN MENU</button>
-	</div>
-</div>
-<script src="main.js"></script>
+    <div class="container">
+        <div class="game-wrap">
+            <canvas width="960px" height="540" id="game"></canvas>
+            <article class="content">
+                <h1 class="title"><span>C</span><span>O</span><span>L</span><span>O</span><span>U</span><span>R</span><span> </span><span>B</span><span>L</span><span>A</span><span>S</span><span>T</span></h1>
+    
+                <p>Use the <code>Left</code> and <code>Right</code> Arrows or <code>A</code> and <code>D</code> keys to move, <code>Spacebar</code> to shoot.</p>
+    
+                <p><a href="https://www.github.com/MainakRepositor" target="_blank">Made by Mainak</a></p>
+            </article>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
